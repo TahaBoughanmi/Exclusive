@@ -1,6 +1,6 @@
 const { Sequelize, DataTypes } = require("sequelize");
 
-const dbName = "gymdb";
+const dbName = "exclusive";
 const dbUser = "root";
 const dbPass = "root";
 const dbHost = "localhost";
@@ -20,7 +20,7 @@ sequelize
   });
 
 const User = require("../Models/User")(sequelize, DataTypes);
-const Product = require("../Models/Product")(sequelize, DataTypes);
+const Product = require("../Models/Products")(sequelize, DataTypes);
 const Order=require("../Models/Order")(sequelize,DataTypes);
 const Wishlist=require("../Models/Wishlist")(sequelize,DataTypes)
 // sequelize

@@ -25,6 +25,10 @@ module.exports=(connection,DataTypes)=>{
       picture: {
         type: DataTypes.STRING, 
         allowNull: false, 
+      },
+      userId:{
+        type:DataTypes.INTEGER,
+        allowNull:false
       }
     });
     
